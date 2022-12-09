@@ -1,2 +1,12 @@
-package com.example.product;public class HomeController {
+package com.example;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HomeController {
+    @RequestMapping(value = "/")
+    public String home(){
+        return "index";
+    }
 }
