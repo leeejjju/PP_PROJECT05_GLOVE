@@ -70,7 +70,7 @@
     </pluginManagement>
     <resources>
       <resource>
-        <directory>src/main/resources</directory>
+        <directory>src/main/resources/mappers</directory>
         <includes>
           <include>*.xml</include>
           <include>**/*.xml</include>

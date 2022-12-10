@@ -17,8 +17,7 @@
       }
   
       .header{
-          
-          margin-bottom: 50px;
+          margin-top: 80px;
       }
 
       .main{
@@ -34,6 +33,10 @@
         color: white;
       }
 
+      form{
+        display: block;
+      }
+
       spin{
         font-size: 15px;
         color: gray;
@@ -45,53 +48,53 @@
         height: 30px; 
         background-color: green; 
         color:white; 
-        font-style: bold;
+        font-weight: bold;
       }
       #back{
-        width: 30%;
+        display: block;
         height: 30px; 
         background-color: rgb(66, 66, 66); 
         color:white; 
-        font-style: bold;
+        font-weight: bold;
       }
 
   
   
   </style>
 
+  <script>
+    function back(){
+      history.back()
+    }
+  </script>
+
 </head>
 <body>
 
   <div class="header">
     <img src="img/logo.jpg" width="80px">
-    <h1 style="color: white;">GLOVE <br><spin>:admin login</spin></h2>
+    <h1 style="color: white;">GLOVE <br><spin>:admin login</spin></h1>
+  </div>
   </div>
 
   <div class="main">
-    <form id="LoginForm" >
-      
+    <form action="login/check" method="post" id="LoginForm">
       <table>
         <tr>
           <td>ID</td>
-          <td><input type="text"></td>
+          <td><input type="text" name="id"></td>
         </tr>
         <tr>
           <td>PW</td>
-          <td><input type="password"></td>
+          <td><input type="password" name="pw"></td>
         </tr>
       </table>
-      <button id="back" onclick="history.back()">Back</button>
       <input id="submit" type="submit" value="Login">
       
     </form>
+    <br>
+    <button id="back" onclick="history.back()">Back</button>
   </div>
-
-  
-
-
-  
-
-
 
 </body>
 </html>

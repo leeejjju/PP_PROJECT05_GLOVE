@@ -33,8 +33,8 @@
 						<div class="col-sm-6">
 							<h1 style="color: white;"><b>Product</b> List</h1>
 						</div>
-						<div class="col-sm-6" id="primeButton">
-							<a href="/addProduct" class="btn" style="color: white; background-color: green; height: 50px; font-size: 120%; font-weight: bold; text-align: center; margin: 10px;">
+						<div class="col-sm-6" id="primeButton" style="right: 0">
+							<a href="addProduct" class="btn" style="color: white; background-color: green; height: 50px; font-size: 120%; font-weight: bold; text-align: center; margin: 10px;">
 								Add New Product
 							</a>
 						</div>
@@ -51,12 +51,27 @@
 							<th>details</th>
 							<th>edit</th>
 						</tr>
+
+						<!-- this is test td-->
+						<tr>
+							<td>0</td>
+							<td><img src="https://ae01.alicdn.com/kf/H60931361587e45e9bda4033f1519752bl/meme-t-shirt-dank-meme-meme.jpg_640x640.jpg" width="50"></td>
+							<td>test brand</td>
+							<td>test product name</td>
+							<td>this is test product. this red t-shirts is really cute and I like it :)</td>
+							<td>
+								<a href="editProduct/0" class="edit"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+								<a href="javascript:delete_ok('0')" class="delete"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+							</td>
+						</tr>
+
+
 					</thead>
 
 					<c:forEach items="${list}" var="u">
 						<tr>
 							<td>${u.getPID()}</td>
-              <td><img src="./upload/${u.getProductIMG()}" width="50"></td>
+              				<td><img src="./upload/${u.getProductIMG()}" width="50"></td>
 							<td>${u.getBrand()}</td>
 							<td>${u.getPname()}</td>
 							<td>${u.getDetails()}</td>

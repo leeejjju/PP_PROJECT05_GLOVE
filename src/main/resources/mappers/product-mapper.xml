@@ -3,22 +3,22 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="productDAO">
-    <insert id="insertBoard">
+    <insert id="insertProduct">
         insert into BOARD (title, writer, content)
         values (#{title}, #{writer}, #{content})
     </insert>
-    <update id="updateBoard">
+    <update id="updateProduct">
         update BOARD
         set title=#{title}, content=#{content} where seq=#{seq}
     </update>
-    <delete id="deleteBoard">
+    <delete id="deleteProduct">
         delete from BOARD
         where seq=#{seq}
     </delete>
-    <select id="getBoard" resultType="board">
+    <select id="getProduct" resultType="product">
         select * from BOARD where seq=#{seq}
     </select>
-    <select id="getBoardList" resultType="board">
+    <select id="getProductList" resultType="product">
         select * from BOARD order by seq desc
     </select>
 

@@ -7,8 +7,7 @@
     <properties resource="db.properties" />-->
     <!--Alias setting -->
     <typeAliases>
-        <!--뒤에 패키지, 경로를 board라는 이름으로 mapper에서 사용할 수 있게 해주는겨-->
-        <typeAlias alias="product" type="com.example.product.productVO" />
+        <!----><typeAlias alias="product" type="com.example.product.ProductVO" />
         <typeAlias alias="user" type="com.example.user.UserVO" />
     </typeAliases >
     <!--Data Source setting
@@ -25,7 +24,8 @@
     </environments>-->
     <!--SQL Mapper setting
     <mappers>
-        <mapper resource="mappers/board-mapper.xml/" />
+        <mapper resource="mappers/product-mapper.xml/" />
+        <mapper resource="mappers/user-mapper.xml/" />
     </mappers>-->
 
 </configuration>

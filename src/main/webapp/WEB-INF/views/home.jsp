@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 
 <title>GLOVE</title>
@@ -6,6 +7,7 @@
     body{
         display: block;
         background-color: black;
+        margin: 10%;
     }
 
     div{
@@ -14,8 +16,7 @@
     }
 
     .header{
-        
-        margin-bottom: 50px;
+        margin-bottom: 70px;
     }
 
     .content{
@@ -26,15 +27,20 @@
     #goto{
         background-color: rgb(39, 107, 14);
         width: 40%;
-        height: 60px;
+        height: 80px;
         font-size: larger;
         font-style: italic;
         color: white;
-        margin: 10px;
+        margin: 20px;
     }
 
     a{
         display: block;
+        color: gray;
+    }
+
+    spin{
+        font-size: 15px;
         color: gray;
     }
 
@@ -45,16 +51,13 @@
 
     <div class="header">
         <img src="img/logo.jpg" width="80px">
-        <h1 style="color: white;">GLOVE</h2>
+        <h1 style="color: white;">GLOVE<br><spin>server time: ${serverTime}</spin></h1>
     </div>
-
 
     <div class="content">
-        <button id="goto" onclick="">Go to grab something!</button>
-        <a href="#">admin login</a>
+        <button id="goto" onclick="location.href='productList'">Go to grab something!</button>
+        <a href="login">admin login</a>
     </div>
-
-
 
 </body>
 </html>

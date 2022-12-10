@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="UserDAO">
-    <!--
+    <!--  -->
     <insert id="insertUser">
         insert into member (userid, username, userpw)
         values (#{userid}, #{username}, #{password})
@@ -15,7 +15,7 @@
     <delete id="deleteUser">
         delete from member
         where seq=#{seq}
-    </delete>-->
+    </delete>
 
     <!--for login check-->
     <select id="getUser" resultType="user">
