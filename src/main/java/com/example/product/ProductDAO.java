@@ -20,37 +20,37 @@ public class ProductDAO {
 
     //C
     public int insertProduct(ProductVO vo) {
-        System.out.println("===> jdbcTemplate으로 insertProduct() 기능 처리");
+        System.out.println("===> insertProduct() 기능 처리");
         return sqlSession.insert("ProductDAO.insertProduct", vo);
     }
 
     //D
     public int deleteProduct(int seq) {
-        System.out.println("===> jdbcTemplate으로 deleteProductProduct() 기능 처리");
+        System.out.println("===> deleteProductProduct() 기능 처리");
         return sqlSession.insert("ProductDAO.deleteProduct", seq);
     }
 
     //U
     public int updateProduct(ProductVO vo) {
-        System.out.println("===> jdbcTemplate으로 updateProduct() 기능 처리");
+        System.out.println("===> updateProduct() 기능 처리");
         return sqlSession.insert("ProductDAO.updateProduct", vo);
     }
 
     //R
     public ProductVO getProduct(int seq) {
         ProductVO one = new ProductVO();
-        System.out.println("===> jdbcTemplate으로 getProduct() 기능 처리");
+        System.out.println("===> getProduct() 기능 처리");
         return sqlSession.selectOne("ProductDAO.getProduct", seq);
     }
 
     //Rrrrr
     public List<ProductVO> getProductList(){
-        System.out.println("===> jdbcTemplate으로 getProductList() 기능 처리");
+        System.out.println("===> getProductList() 기능 처리");
         return sqlSession.selectList("ProductDAO.getProductList");
     }
 
     public List<ProductVO> getProductListByBrand(String brand){
-        System.out.println("===> jdbcTemplate으로 getProductList() 기능 처리");
+        System.out.println("===> getProductList() 기능 처리");
         return sqlSession.selectList("ProductDAO.getProductListByBrand", brand);
     }
 

@@ -51,25 +51,21 @@
         color:white; 
         font-weight: bold;
       }
+
       #back{
         margin: 10px;
         display: block;
         height: 30px; 
         background-color: black;
         color:gray;
-        text-underline: gray;
-        font-weight: bold;
+        text-decoration: underline solid gray;
+        font-style: italic;
       }
 
   
   
   </style>
 
-  <script>
-    function back(){
-      history.back()
-    }
-  </script>
 
 </head>
 <body>
@@ -97,7 +93,7 @@
 
   </div>
   <div style="display: flex; justify-content: center">
-    <button id="back" onclick="history.back()">Back</button>
+    <button id="back" onclick="history.back()">back to home</button>
   </div>
 
 </body>

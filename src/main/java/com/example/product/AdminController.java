@@ -20,14 +20,14 @@ public class AdminController {
     }
 
     //user용 브랜드별 상품 조회
-    @RequestMapping(value = "/user/list/{brand}", method = RequestMethod.GET)
+    @RequestMapping(value = "user/list/{brand}", method = RequestMethod.GET)
     public String productList(@PathVariable("brand") String brand, Model model){
         model.addAttribute("list", productService.getProductListByBrand(brand));
         return "productList";
     }
 
     //user용 개별 상품 보기
-    @RequestMapping(value = "user/view/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "user/list/view/{id}", method = RequestMethod.GET)
     public String viewProduct(@PathVariable("id") int id, Model model){
         ProductVO productVO = productService.getProduct(id);
         model.addAttribute("productVO", productVO);

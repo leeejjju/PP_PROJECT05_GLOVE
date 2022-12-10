@@ -55,7 +55,7 @@
     </div>
 
     <div class="content">
-        <button id="goto" onclick="location.href='productList'">Go to grab something!</button>
+        <button id="goto" onclick="location.href='user'">Go to grab something!</button>
         <a href="login">admin login</a>
     </div>
 

@@ -26,8 +26,6 @@ public class HomeController {
         return "home";
     }
 
-
-
     @RequestMapping(value = "/login")
     public String login(Model model){
         return "login";
@@ -38,13 +36,10 @@ public class HomeController {
         return "login_check";
     }
 
-    @RequestMapping(value = "/productList")
-    public String productList(Model model){
-        return "productList";
+    @RequestMapping(value = "/user")
+    public String userMain(){
+        return "main";
     }
-
-
-
 
 
 

@@ -1,42 +1,58 @@
-//package com.example.user;
-//import java.util.List;
-//import org.apache.ibatis.session.SqlSession;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.stereotype.Repository;
-//
-//@Repository
-//public class UserDAO {
-//    @Autowired
-//    SqlSession sqlSession;
-//
-//    //C
-//    public int insertUser(UserVO vo) {
-//        System.out.println("===> myBatis로 insertUser() 기능 처리");
-//        return sqlSession.insert("UserDAO.insertUser", vo);
-//    }
-//
-//    //D
-//    public int deleteUser(int seq) {
-//        System.out.println("===> myBatis로 deleteUser() 기능 처리");
-//        return sqlSession.insert("UserDAO.deleteUser", seq);
-//    }
-//
-//    //U
-//    public int updateUser(UserVO vo) {
-//        System.out.println("===> myBatis로 updateUser() 기능 처리");
-//        return sqlSession.insert("UserDAO.updateUser", vo);
-//    }
-//
-//    //R
-//    public UserVO getUser(UserVO vo) {
-//        System.out.println("===> jdbcTemplate으로 getUser() 기능 처리");
-//        return sqlSession.selectOne("UserDAO.getUser", vo);
-//    }
-//
-//    //Rrrrr
-//    public List<UserVO> getUserList(){
-//        System.out.println("===> myBatis로 getUserList() 기능 처리");
-//        return sqlSession.selectList("UserDAO.getUserList");
-//    }
-//
-//}
+package com.example.user;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class OrderDAO {
+
+    @Autowired
+    SqlSession sqlSession;
+
+
+    //C
+    public int insertOrder(OrderVO vo) {
+        System.out.println("===> insertOrder() 기능 처리");
+        return sqlSession.insert("OrderDAO.insertOrder", vo);
+    }
+
+    //D
+    public int deleteOrder(int seq) {
+        System.out.println("===> deleteOrderOrder() 기능 처리");
+        return sqlSession.insert("OrderDAO.deleteOrder", seq);
+    }
+
+    //U
+    public int updateOrder(OrderVO vo) {
+        System.out.println("===> updateOrder() 기능 처리");
+        return sqlSession.insert("OrderDAO.updateOrder", vo);
+    }
+
+    //R
+    public OrderVO getOrder(int seq) {
+        OrderVO one = new OrderVO();
+        System.out.println("===> getOrder() 기능 처리");
+        return sqlSession.selectOne("OrderDAO.getOrder", seq);
+    }
+
+    //Rrrrr
+    public List<OrderVO> getOrderList(){
+        System.out.println("===> getOrderList() 기능 처리");
+        return sqlSession.selectList("OrderDAO.getOrderList");
+    }
+
+
+
+
+
+
+
+}

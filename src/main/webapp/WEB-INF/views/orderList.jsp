@@ -1,16 +1,84 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Pearl LEE
-  Date: 2022-12-09
-  Time: 오후 2:35
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>GLOVE/order</title>
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function delete_ok(id) {
+            var a = confirm("정말로 취소하겠습니까?");
+            if (a) location.href = 'delete/' + id;
+        }
+    </script>
 </head>
-<body>
+
+
+<body style="background-color: black;">
+
+<div class="container-xl" style="margin-top: 20px">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1 style="color: white;"><b>Order</b> List</h1>
+                    </div>
+                </div>
+            </div>
+
+            <table id="list" class="table table-striped table-hover" style="background-color: white;">
+                <thead style="color: green;">
+                <tr>
+                    <!--order case-->
+
+                    <!--board case-->
+                    <th>title</th>
+                    <th>writer</th>
+                    <th>content</th>
+                    <th>regdate</th>
+                    <th>edit</th>
+
+
+                </tr>
+                </thead>
+
+                <!-- this is test td-->
+                <tr>
+                    <!--order case-->
+                </tr>
+
+                <c:forEach items="${list}" var="u">
+
+                    <!--order case-->
+
+
+                    <!--board case-->
+                    <tr>
+                        <td>${u.getTitle()}</td>
+                        <td>${u.getWriter()}</td>
+                        <td>${u.getContent()}</td>
+                        <td>${u.getRegdate()}</td>
+                        <td>
+                            <a href="edit/${u.seq}" class="edit">주문 정보 수정</a>
+                            <br>
+                            <a href="javascript:delete_ok('${u.seq}')" class="delete">주문 취소</a>
+                        </td>
+                    </tr>
+
+                </c:forEach>
+            </table>
+        </div>
+    </div>
+</div>
+<br />
 
 </body>
-</html>

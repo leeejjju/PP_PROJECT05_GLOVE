@@ -3,29 +3,11 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-    <!--Properties file setting
-    <properties resource="db.properties" />-->
+
     <!--Alias setting -->
     <typeAliases>
         <typeAlias alias="product" type="com.example.product.ProductVO" />
-        <!--<typeAlias alias="order" type="com.example.user.OrderVO" />-->
+        <typeAlias alias="order" type="com.example.user.OrderVO" />
     </typeAliases >
-    <!--Data Source setting
-    <environments default="development">
-        <environment id="development">
-            <transactionManager type="JDBC" />
-            <dataSource type="POOLED">
-                <property name="driver" value="${jdbc.driverClassName}"/>
-                <property name="url" value="${jdbc.url}"/>
-                <property name="username" value="${jdbc.username}"/>
-                <property name="password" value="${jdbc.password}"/>
-            </dataSource>
-        </environment>
-    </environments>-->
-    <!--SQL Mapper setting
-    <mappers>
-        <mapper resource="mappers/product-mapper.xml/" />
-        <mapper resource="mappers/user-mapper.xml/" />
-    </mappers>-->
 
 </configuration>
