@@ -24,8 +24,7 @@
 
 <body style="background-color: black;">
 
-	<!--Main Table -->
-	<div class="container-xl">
+	<div class="container-xl" style="margin-top: 20px">
 		<div class="table-responsive">
 			<div class="table-wrapper">
 				<div class="table-title">
@@ -34,7 +33,7 @@
 							<h1 style="color: white;"><b>Product</b> List</h1>
 						</div>
 						<div class="col-sm-6" id="primeButton" style="right: 0">
-							<a href="addProduct" class="btn" style="color: white; background-color: green; height: 50px; font-size: 120%; font-weight: bold; text-align: center; margin: 10px;">
+							<a href="add" class="btn" style="color: white; background-color: green; height: 50px; font-size: 120%; font-weight: bold; text-align: center; margin: 10px;">
 								Add New Product
 							</a>
 						</div>
@@ -44,46 +43,72 @@
 				<table id="list" class="table table-striped table-hover" style="background-color: white;">
 					<thead style="color: green;">
 						<tr>
-							<th>PID</th>
-							<th>productIMG</th>
-							<th>brand</th>
-							<th>productName</th>
-							<th>details</th>
+							<!--product case-->
+<%--							<th>PID</th>--%>
+<%--							<th>productIMG</th>--%>
+<%--							<th>brand</th>--%>
+<%--							<th>productName</th>--%>
+<%--							<th>details</th>--%>
+<%--							<th>edit</th>--%>
+
+
+							<!--board case-->
+							<th>title</th>
+							<th>writer</th>
+							<th>content</th>
+							<th>regdate</th>
 							<th>edit</th>
+
+
 						</tr>
+					</thead>
 
 						<!-- this is test td-->
 						<tr>
-							<td>0</td>
-							<td><img src="https://ae01.alicdn.com/kf/H60931361587e45e9bda4033f1519752bl/meme-t-shirt-dank-meme-meme.jpg_640x640.jpg" width="50"></td>
-							<td>test brand</td>
-							<td>test product name</td>
-							<td>this is test product. this red t-shirts is really cute and I like it :)</td>
-							<td>
-								<a href="editProduct/0" class="edit"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-								<a href="javascript:delete_ok('0')" class="delete"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-							</td>
+							<!--product case-->
+<%--							<td>0</td>--%>
+<%--							<td><img src="https://ae01.alicdn.com/kf/H60931361587e45e9bda4033f1519752bl/meme-t-shirt-dank-meme-meme.jpg_640x640.jpg" width="50"></td>--%>
+<%--							<td>test brand</td>--%>
+<%--							<td>test product name</td>--%>
+<%--							<td>this is test product. this red t-shirts is really cute and I like it :)</td>--%>
+<%--							<td>--%>
+<%--								<a href="edit/0" class="edit"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>--%>
+<%--								<a href="javascript:delete_ok('0')" class="delete"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>--%>
+<%--							</td>--%>
 						</tr>
-
-
-					</thead>
 
 					<c:forEach items="${list}" var="u">
+
+						<!--product case-->
+<%--						<tr>--%>
+<%--							<td>${u.getPID()}</td>--%>
+<%--              				<td><img src="./upload/${u.getProductIMG()}" width="50"></td>--%>
+<%--							<td>${u.getBrand()}</td>--%>
+<%--							<td>${u.getPname()}</td>--%>
+<%--							<td>${u.getDetails()}</td>--%>
+<%--							<td>--%>
+<%--								<a href="edit/${u.PID}" class="edit"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>--%>
+<%--								<a href="javascript:delete_ok('${u.PID}')" class="delete"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>--%>
+<%--							</td>--%>
+<%--						</tr>--%>
+
+						<!--board case-->
 						<tr>
-							<td>${u.getPID()}</td>
-              				<td><img src="./upload/${u.getProductIMG()}" width="50"></td>
-							<td>${u.getBrand()}</td>
-							<td>${u.getPname()}</td>
-							<td>${u.getDetails()}</td>
+							<td>${u.getTitle()}</td>
+							<td>${u.getWriter()}</td>
+							<td>${u.getContent()}</td>
+							<td>${u.getRegdate()}</td>
 							<td>
-								<a href="editProduct/${u.PID}" class="edit"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-								<a href="javascript:delete_ok('${u.PID}')" class="delete"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+								<a href="edit/${u.seq}" class="edit"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+								<a href="javascript:delete_ok('${u.seq}')" class="delete"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
 							</td>
 						</tr>
+
 					</c:forEach>
 				</table>
 			</div>
 		</div>
 	</div>
 	<br />
+
 </body>

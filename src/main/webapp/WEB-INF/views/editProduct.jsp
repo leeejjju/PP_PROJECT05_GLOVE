@@ -14,6 +14,7 @@
     <div style="border: 2px solid darkolivegreen; padding: 20px; margin: 30px; width: 40%; display: block">
         <h1>Edit Product</h1>
 
+        <!--to seeing
         <form method="POST" enctype="multipart/form-data">
           <hidden path="pid"/>
           <table>
@@ -39,8 +40,24 @@
                 <td><input type="submit" value="Add User"/></td>
               </tr>
             </table>
-        </form>
+        </form>-->
 
+
+        <!--board case-->
+        <form:form modelAttribute="productVO" method="POST" action="../editok" >
+            <form:hidden path="seq"/>
+            <table id="edit">
+                <tr><td>Title:</td><td><form:input path="title"/></td></tr>
+                <tr><td>Writer:</td><td><form:input path="writer"/></td></tr>
+                <tr><td>Content:</td><td><form:textarea cols="50" rows="5" path="content"/></td></tr>
+            </table>
+            <input type="submit" value="Edit post" />
+            <input type="button" value="Back" onclick="history.back()" />
+        </form:form>
+
+
+
+        <!--product case-->
 <%--        <form:form modelAttribute="productVO" method="POST" action="../p_editok" enctype="multipart/form-data">--%>
 <%--          <form:hidden path="pid"/>    --%>
 <%--          <table id="edit_p">--%>

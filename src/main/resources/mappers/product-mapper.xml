@@ -2,7 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="productDAO">
+<!--여기서 DB명 바꾸고 쿼리 좀 바꾸면 될 것 같아용
+-->
+<mapper namespace="ProductDAO">
     <insert id="insertProduct">
         insert into BOARD (title, writer, content)
         values (#{title}, #{writer}, #{content})
@@ -22,7 +24,12 @@
         select * from BOARD order by seq desc
     </select>
 
-    <!--
-    <![CDATA[여기에서는 특수기호 사용 가능. <, > 등등... where 조건절에서 필요하면 일케 쓸 것.]]>
-    -->
+    <!-- 브랜드별 보기 할 때 사용할 것!! -->
+    <select id="getProductListByBrand" resultType="product">
+        select * from BOARD where where brand=#{brand} order by seq desc
+    </select>
+
+
+
+
 </mapper>

@@ -12,6 +12,8 @@
 
     <div style="border: 2px solid darkolivegreen; padding: 20px; margin: 30px; width: 40%; display: block">
         <h1>Add New Product</h1>
+
+        <!--product case
         <form action="p_addok" method="post" enctype="multipart/form-data">
             <table>
               <tr><td>brand</td><td>
@@ -29,6 +31,20 @@
                 <td><a href="posts.jsp">back to list</a></td>
                 <td><input type="submit" value="Add User"/></td>
               </tr>
+            </table>
+        </form>
+        -->
+
+        <!--board case-->
+        <form action="addok" method="post">
+            <table>
+                <tr><td>title</td><td><input type="text" name="title"></td></tr>
+                <tr><td>writer</td><td><input type="text" name="writer"></td></tr>
+                <tr><td>content</td><td><textarea type="textarea" name="content" cols=20 rows=5></textarea></td></tr>
+                <tr>
+                    <td><button type="button" onclick="location.href='list'" >back</button></td>
+                    <td><button type="submit"/>Add product</td>
+                </tr>
             </table>
         </form>
     </div>

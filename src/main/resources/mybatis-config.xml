@@ -7,8 +7,8 @@
     <properties resource="db.properties" />-->
     <!--Alias setting -->
     <typeAliases>
-        <!----><typeAlias alias="product" type="com.example.product.ProductVO" />
-        <typeAlias alias="user" type="com.example.user.UserVO" />
+        <typeAlias alias="product" type="com.example.product.ProductVO" />
+        <!--<typeAlias alias="order" type="com.example.user.OrderVO" />-->
     </typeAliases >
     <!--Data Source setting
     <environments default="development">
