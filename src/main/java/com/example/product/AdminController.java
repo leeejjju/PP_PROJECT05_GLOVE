@@ -19,6 +19,8 @@ public class AdminController {
         return "list";
     }
 
+
+
     //user용 브랜드별 상품 조회
     @RequestMapping(value = "user/list/{brand}", method = RequestMethod.GET)
     public String productList(@PathVariable("brand") String brand, Model model){
@@ -27,7 +29,7 @@ public class AdminController {
     }
 
     //user용 개별 상품 보기
-    @RequestMapping(value = "user/list/view/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "user/view/{id}", method = RequestMethod.GET)
     public String viewProduct(@PathVariable("id") int id, Model model){
         ProductVO productVO = productService.getProduct(id);
         model.addAttribute("productVO", productVO);
@@ -35,10 +37,21 @@ public class AdminController {
     }
 
     //user용 해당 상품 주문폼으로 넘어가기
-    @RequestMapping(value = "user/order/{id}", method = RequestMethod.POST)
-    public String gotoForm(@PathVariable("id") int id, Model model){
-        return "redirect:user/order/" + id;
+    @RequestMapping(value = "user/order", method = RequestMethod.POST)
+    public String gotoForm(ProductVO vo){
+        int pid = vo.getSeq();
+        return "redirect:order/" + pid;
     }
+
+    @RequestMapping(value = "user/order/{pid}", method = RequestMethod.GET)
+    public String add(@PathVariable("pid") int pid, Model model){
+        ProductVO productVO = productService.getProduct(pid);
+        model.addAttribute("productVO", productVO);
+        model.addAttribute("pid", pid);
+        return "addOrder";
+    }
+
+
 
 
     //상품 추가하기

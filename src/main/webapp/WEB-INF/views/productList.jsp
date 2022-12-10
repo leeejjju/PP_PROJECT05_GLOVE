@@ -88,7 +88,7 @@
                         <td>${u.getContent()}</td>
                         <td>${u.getRegdate()}</td>
                         <td>
-                            <a href="view/${u.seq}" class="view">View</a>
+                            <a href="../view/${u.seq}" class="view">View</a>
                         </td>
                     </tr>
 
