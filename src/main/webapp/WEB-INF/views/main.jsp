@@ -72,7 +72,7 @@
     }
 
 
-    #back{
+    .back{
         margin: 10px;
         display: block;
         height: 30px; 
@@ -87,7 +87,7 @@
 <body>
 
     <div class="header">
-        <img src="img/logo.jpg" width="40px" style="margin: 20px;">
+        <img src="img/logo.jpg" width="40px" height="40px" style="margin: 20px;">
         <h1 style="color: white;">GLOVE</h1>
     </div>
 
@@ -108,8 +108,8 @@
     </div>
 
     <div style="display: flex; justify-content: center">
-      <button id="back" onclick="location.href='user/order/list'" style="color: white;">go to order list</button>
-      <button id="back" onclick="history.back()">back to home</button>
+      <button class="back" onclick="location.href='user/order/list'" style="color: white;">go to order list</button>
+      <button class="back" onclick="history.back()">back to home</button>
     </div>
 
 </body>

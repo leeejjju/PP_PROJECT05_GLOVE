@@ -5,10 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.PathVariable;
-import javax.servlet.http.HttpSession;
+//import javax.servlet.http.HttpSession;
 import org.springframework.ui.Model;
-import com.example.user.OrderServiceImpl;
-import com.example.user.OrderVO;
 
 
 //Order와 관련된 링크들을 다룸.
@@ -33,6 +31,19 @@ public class UserController {
         model.addAttribute("pid", id); //해당 폼에 hidden으로 pid를 숨겨놓고 주문정보와 함꼐 넘길 것!!
         return "addOrder";
     }
+
+    //상품추가 처리
+    @RequestMapping(value = "addok", method = RequestMethod.POST)
+    public String addok(OrderVO vo){
+        int i = orderService.insertOrder(vo);
+        if(i == 0){
+            System.out.println("주문 실패");
+        }else{
+            System.out.println("주문 성공!!!");
+        }
+        return "addOrderOK";
+    }
+
 
     //주문정보 수정
     @RequestMapping(value = "/edit/{id}", method = RequestMethod.GET)
