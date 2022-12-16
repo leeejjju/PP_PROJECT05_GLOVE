@@ -58,7 +58,6 @@ public class AdminController {
         return "addOrder";
     }
 
-
     //상품 추가하기
     @RequestMapping(value = "admin/add", method = RequestMethod.GET)
     public String add(Model model){

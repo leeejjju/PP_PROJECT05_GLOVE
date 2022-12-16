@@ -9,14 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4919f6d3-9d8c-4281-b13a-c7f8584b7bf1" name="Changes" comment="ing...">
+    <list default="true" id="4919f6d3-9d8c-4281-b13a-c7f8584b7bf1" name="Changes" comment="addOrder edited, viewProduct edited, trying to implement brand filtering">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/product/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/product/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/product-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/product-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addOrder.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/viewProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/viewProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/user-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/user-mapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +67,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Munjeonbakdea/Assignments/2022-2/PracicalProject/PP_PROJECT05_GLOVE",
+    "last_opened_file_path": "C:/tools/PP_PROJECT05_GLOVE",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -204,7 +201,7 @@
       <workItem from="1671214001493" duration="549000" />
       <workItem from="1671215204636" duration="1115000" />
       <workItem from="1671216469642" duration="344000" />
-      <workItem from="1671216958449" duration="3092000" />
+      <workItem from="1671216958449" duration="5017000" />
     </task>
     <task id="LOCAL-00001" summary="ing...">
       <created>1670562277859</created>
@@ -255,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671218239413</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="addOrder edited, viewProduct edited, trying to implement brand filtering">
+      <created>1671220152350</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671220152350</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +282,7 @@
     <MESSAGE value="user(order) RUD completeness (with BOARD DB, tmp)" />
     <MESSAGE value="merged" />
     <MESSAGE value="ing..." />
-    <option name="LAST_COMMIT_MESSAGE" value="ing..." />
+    <MESSAGE value="addOrder edited, viewProduct edited, trying to implement brand filtering" />
+    <option name="LAST_COMMIT_MESSAGE" value="addOrder edited, viewProduct edited, trying to implement brand filtering" />
   </component>
 </project>
