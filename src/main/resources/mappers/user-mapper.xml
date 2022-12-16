@@ -26,7 +26,7 @@
 
     <!-- 브랜드별 보기 할 때 사용할 것!! -->
     <select id="getOrderListByBrand" resultType="order">
-        select * from orderList where where brand=#{brand} order by seq desc
+        select * from orderList where brand=#{brand} order by seq desc
     </select>
 
 </mapper>

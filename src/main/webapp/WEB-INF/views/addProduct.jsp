@@ -45,8 +45,6 @@
                             <option value="brand1">Brand1</option>
                             <option value="brand2">Brand2</option>
                             <option value="brand3">Brand3</option>
-                            <option value="brand4">Brand4</option>
-                            <option value="brand5">Brand5</option>
                         </select>
                     </td>
                 </tr>
