@@ -36,6 +36,17 @@ public class HomeController {
         return "main";
     }
 
+    @RequestMapping(value = "/file")
+    public String file(Model model){
+        return "file";
+    }
+
+    @RequestMapping(value = "/upload")
+    public String fileupload(Model model){
+        return "fileupload";
+    }
+
+
 
 
 }
