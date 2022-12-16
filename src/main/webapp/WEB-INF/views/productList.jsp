@@ -40,15 +40,31 @@
                     <%--							<th>details</th>--%>
                     <%--							<th>view</th>--%>
 
-                    <th>Img</th>
+
+                    <!--board case-->
                     <th>Brand</th>
                     <th>Product</th>
                     <th>Price</th>
+                    <th>Img</th>
                     <th>Info</th>
 
 
                 </tr>
                 </thead>
+
+                <!-- this is test td-->
+                <tr>
+                    <!--product case-->
+                    <%--							<td>0</td>--%>
+                    <%--							<td><img src="https://ae01.alicdn.com/kf/H60931361587e45e9bda4033f1519752bl/meme-t-shirt-dank-meme-meme.jpg_640x640.jpg" width="50"></td>--%>
+                    <%--							<td>test brand</td>--%>
+                    <%--							<td>test product name</td>--%>
+                    <%--							<td>this is test product. this red t-shirts is really cute and I like it :)</td>--%>
+                    <%--							<td>--%>
+                    <%--								<a href="edit/0" class="edit"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>--%>
+                    <%--								<a href="javascript:delete_ok('0')" class="delete"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>--%>
+                    <%--							</td>--%>
+                </tr>
 
                 <c:forEach items="${list}" var="u">
 
@@ -65,11 +81,12 @@
                     <%--							</td>--%>
                     <%--						</tr>--%>
 
+                    <!--board case-->
                     <tr>
-                        <td>${u.getImg()}</td>
-                        <td><img src="../../resources/img/${u.getProductIMG()}" width="50"></td>
+                        <td>${u.getBrand()}</td>
                         <td>${u.getProduct()}</td>
                         <td>${u.getPrice()}</td>
+                        <td>${u.getImg()}</td>
                         <td>${u.getInfo()}</td>
                         <td>
                             <a href="../view/${u.seq}" class="view">View</a>

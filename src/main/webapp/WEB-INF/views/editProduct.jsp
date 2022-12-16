@@ -14,36 +14,6 @@
     <div style="border: 2px solid darkolivegreen; padding: 20px; margin: 30px; width: 40%; display: block">
         <h1>Edit Product</h1>
 
-        <!--to seeing-->
-<%--        <form method="POST" enctype="multipart/form-data">--%>
-<%--          <hidden path="pid"/>--%>
-<%--          <table>--%>
-<%--              <tr><td>brand</td><td>--%>
-<%--                  Nike<input type="radio" name="brand" value="Nike" style="margin: 5px" >--%>
-<%--                  Yail<input type="radio" name="brand" value="Yail" style="margin: 5px;">--%>
-<%--                  Lee<input type="radio" name="brand" value="Lee" style="margin: 5px;" >--%>
-<%--              </td></tr>--%>
-<%--              <tr>--%>
-<%--                  <td>Product name</td>--%>
-<%--                  <td><input type="text" name="pname"></input></td>--%>
-<%--              </tr>--%>
-<%--              <tr>--%>
-<%--                <td>details</td>--%>
-<%--                  <td><textarea type="textarea" name="details" cols="20"></textarea></td>--%>
-<%--              </tr>--%>
-<%--              <tr>--%>
-<%--                  <td>productIMG</td>--%>
-<%--                  <td><input type="file" name="productIMG"></input></td>--%>
-<%--              </tr>--%>
-<%--              <tr>--%>
-<%--                <td><input type="button" value="Back" onclick="history.back()" /></td>--%>
-<%--                <td><input type="submit" value="Add User"/></td>--%>
-<%--              </tr>--%>
-<%--            </table>--%>
-<%--        </form>--%>
-
-
-        <!--board case-->
         <form:form modelAttribute="productVO" method="POST" action="../editok" >
             <form:hidden path="seq"/>
             <table id="edit">

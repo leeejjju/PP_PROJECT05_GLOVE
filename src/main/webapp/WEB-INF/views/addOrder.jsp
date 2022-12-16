@@ -15,8 +15,6 @@
         <h1>Order information</h1>
 
         <!--order case-->
-
-        <!--board case-->
         <form action="addok" method="post">
             <table>
                 <form:hidden path="pid"></form:hidden>
@@ -26,16 +24,26 @@
                 <tr><td>productNumber</td><td><input type="text" name="productNumber"></td></tr>
                 <tr><td>count</td><td><input type="number" id="count" name="count" min="1" max="20"></td></tr>
                 <tr>
-                    <td><input type="radio" id="size_XS" name="size" value="XS"></td>
-                    <label for="size_XS">XS</label>
-                    <td><input type="radio" id="size_S" name="size" value="S"></td>
-                    <label for="size_S">S</label>
-                    <td><input type="radio" id="size_M" name="size" value="M"></td>
-                    <label for="size_M">M</label>
-                    <td><input type="radio" id="size_L" name="size" value="L"></td>
-                    <label for="size_L">L</label>
-                    <td><input type="radio" id="size_XL" name="size" value="XL"></td>
-                    <label for="size_XL">XL</label>
+                    <td>
+                        <label for="size_XS">XS</label>
+                        <input type="radio" id="size_XS" name="size" value="XS">
+                    </td>
+                    <td>
+                        <label for="size_S">S</label>
+                        <input type="radio" id="size_S" name="size" value="S">
+                    </td>
+                    <td>
+                        <label for="size_M">M</label>
+                        <input type="radio" id="size_M" name="size" value="M">
+                    </td>
+                    <td>
+                        <label for="size_L">L</label>
+                        <input type="radio" id="size_L" name="size" value="L">
+                    </td>
+                    <td>
+                        <label for="size_XL">XL</label>
+                        <input type="radio" id="size_XL" name="size" value="XL">
+                    </td>
                 </tr>
                 <tr>
                     <td><button type="button" onclick="location.href='list'" >back</button></td>

@@ -26,9 +26,9 @@
 
     <!-- 브랜드별 보기 할 때 아래 주석처리된 것 과 같이 수정하여 사용할 것!! -->
     <select id="getProductListByBrand" resultType="product">
-        select * from list order by seq desc
+        select * from list where brand=#{brand} order by seq desc
     </select>
-    <!--select * from BOARD where brand=#{brand} order by seq desc-->
+    <!--select * from list where brand=#{brand} order by seq desc-->
 
 
 
