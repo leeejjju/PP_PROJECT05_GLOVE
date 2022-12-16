@@ -10,15 +10,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4919f6d3-9d8c-4281-b13a-c7f8584b7bf1" name="Changes" comment="user(order) RUD completeness (with BOARD DB, tmp)">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addOrderOK.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/java/com/example/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/java/com/example/LoginCheckInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/java/com/example/product/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/java/com/example/product/ProductDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/java/com/example/product/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/java/com/example/product/ProductVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/java/com/example/user/OrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/java/com/example/user/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/java/com/example/user/OrderVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/java/com/example/user/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/resources/mappers/product-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/resources/mappers/user-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/WEB-INF/views/addOrder.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/WEB-INF/views/addOrderOK.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/WEB-INF/views/addProduct.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/WEB-INF/views/boots.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/WEB-INF/views/editOrder.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/WEB-INF/views/editProduct.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/WEB-INF/views/login_check.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/WEB-INF/views/main.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/WEB-INF/views/orderList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/WEB-INF/views/productList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/WEB-INF/views/viewProduct.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/resources/img/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PP_PROJECT05_GLOVE/src/main/webapp/resources/img/new.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/LoginCheckInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/product/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/product/ProductDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/product/ProductServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/product/ProductVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/user/OrderDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/user/OrderServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/user/OrderVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/user/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/product-mapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/user-mapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addOrder.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addOrderOK.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addProduct.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/boots.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editOrder.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editProduct.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login_check.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/orderList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/viewProduct.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/img/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/img/new.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +127,10 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Munjeonbakdea/Assignments/2022-2/PracicalProject22-2/PP_PROJECT05_GLOVE",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -190,6 +255,7 @@
       <workItem from="1670572649901" duration="5087000" />
       <workItem from="1670656990630" duration="27847000" />
       <workItem from="1670912129160" duration="3229000" />
+      <workItem from="1671052537660" duration="1121000" />
     </task>
     <task id="LOCAL-00001" summary="ing...">
       <created>1670562277859</created>
