@@ -11,7 +11,7 @@
     </insert>
     <update id="updateOrder">
         update orderList2
-        set uname=#{uname}, pnum=#{pnum}, address=#{address}, pid=#{pid}, size=#{size}, count=#{count}
+        set uname=#{uname}, pnum=#{pnum}, address=#{address}, size=#{size}, count=#{count}
         where oid=#{oid}
     </update>
     <delete id="deleteOrder">

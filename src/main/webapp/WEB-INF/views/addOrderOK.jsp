@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<h1>주문 성공!</h1>
+<h1 style="margin: 20px;">주문 성공!</h1>
 
 <button type="button" onclick="location.href='../'">쇼핑 계속하기</button>
 <button type="button" onclick="location.href='list'">주문목록 확인하기</button>

@@ -47,7 +47,7 @@
                 <br>
                 <tr>
                     <td><button type="button" onclick="location.href='list'" >back</button></td>
-                    <td><button type="submit"/>Add product</td>
+                    <td><button type="submit"/>Ordering</td>
                 </tr>
             </table>
         </form>
