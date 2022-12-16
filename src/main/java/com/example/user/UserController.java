@@ -1,5 +1,6 @@
 package com.example.user;
 
+import com.example.product.ProductVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,14 +22,8 @@ public class UserController {
     //주문목록 리스트
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String orderList(Model model){
-        model.addAttribute("list", orderService.getOrderList());
+        model.addAttribute("list", orderService.getProductInfoByOrderList());
         return "orderList";
-    }
-
-    @RequestMapping(value="/list/brand1", method = RequestMethod.GET)
-    public String orderListByBrand(Model model){
-        model.addAttribute("list", orderService.getOrderListByBrand());
-        return "listByB1";
     }
 
     //주문 추가하기, id는 상품id(pid)
@@ -37,6 +32,7 @@ public class UserController {
         model.addAttribute("pid", id); //해당 폼에 hidden으로 pid를 숨겨놓고 주문정보와 함꼐 넘길 것!!
         return "addOrder";
     }
+
 
     //상품추가 처리
     @RequestMapping(value = "addok", method = RequestMethod.POST)
@@ -49,6 +45,7 @@ public class UserController {
         }
         return "addOrderOK";
     }
+
 
 
     //주문정보 수정

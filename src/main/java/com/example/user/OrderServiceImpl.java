@@ -32,7 +32,11 @@ public class OrderServiceImpl{
         return orderDAO.getOrderList();
     }
 
-    public List<OrderVO> getOrderListByBrand() {
-        return orderDAO.getOrderListByBrand();
+    public List<OrderVO> getProductInfoByOrderList() {
+        return orderDAO.getProductInfoByOrderList();
     }
+
+
+
+
 }

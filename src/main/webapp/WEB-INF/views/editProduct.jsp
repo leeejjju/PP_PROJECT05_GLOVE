@@ -24,8 +24,6 @@
                             <form:option value="brand1" />
                             <form:option value="brand2" />
                             <form:option value="brand3" />
-                            <form:option value="brand4" />
-                            <form:option value="brand5" />
                         </form:select>
                     </td>
                 </tr>

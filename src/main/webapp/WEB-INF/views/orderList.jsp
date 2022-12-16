@@ -40,46 +40,35 @@
                 <thead style="color: green;">
                 <tr>
                     <!--order case-->
-
-                    <!--board case-->
-                    <th>seq</th>
-                    <th>Name</th>
-                    <th>Address</th>
-                    <th>brand</th>
-                    <th>Product Number</th>
-                    <th>Product Count</th>
+                    <th>order id</th>
+                    <th>preview</th>
+                    <th>Product name</th>
                     <th>Size</th>
-                    <th>regdate</th>
+                    <th>Count</th>
+                    <th>Address</th>
+                    <th>order date</th>
                     <th>edit</th>
 
 
                 </tr>
                 </thead>
 
-                <!-- this is test td-->
-                <tr>
-                    <!--order case-->
-                </tr>
 
                 <c:forEach items="${list}" var="u">
 
                     <!--order case-->
-
-
-                    <!--board case-->
                     <tr>
-                        <td>${u.getSeq()}</td>
-                        <td>${u.getUserName()}</td>
-                        <td>${u.getAddress()}</td>
-                        <td>${u.getBrand()}</td>
-                        <td>${u.getProductNumber()}</td>
-                        <td>${u.getCount()}</td>
+                        <td>${u.getOid()}</td>
+                        <td>${u.getImg()}</td>
+                        <td>${u.getProduct()}</td>
                         <td>${u.getSize()}</td>
+                        <td>${u.getCount()}</td>
+                        <td>${u.getAddress()}</td>
                         <td>${u.getRegdate()}</td>
                         <td>
-                            <a href="edit/${u.seq}" class="edit">주문 정보 수정</a>
+                            <a href="edit/${u.oid}" class="edit" style="text-underline: deepskyblue">주문 정보 수정</a>
                             <br>
-                            <a href="javascript:delete_ok('${u.seq}')" class="delete">주문 취소</a>
+                            <a href="javascript:delete_ok('${u.oid}')" class="delete" style="text-underline: deepskyblue">주문 취소</a>
                         </td>
                     </tr>
 

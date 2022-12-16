@@ -49,11 +49,11 @@ public class OrderDAO {
         return sqlSession.selectList("OrderDAO.getOrderList");
     }
 
-    // 브랜드 별로 모아서 보기
-    public List<OrderVO> getOrderListByBrand(){
-        System.out.println("===> getOrderListByBrand() 기능 처리");
-        return sqlSession.selectList("OrderDAO.getOrderListByBrand");
+    public List<OrderVO> getProductInfoByOrderList(){
+        System.out.println("===> getProductInfoByOrderList() 기능 처리");
+        return sqlSession.selectList("OrderDAO.getProductInfoByOrderList");
     }
+
 
 
 

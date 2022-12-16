@@ -17,12 +17,10 @@
         <!--order case-->
         <form action="addok" method="post">
             <table>
-                <form:hidden path="pid"></form:hidden>
-                <tr><td>userName</td><td><input type="text" name="userName"></td></tr>
-                <tr><td>address</td><td><input type="text" name="address"></td></tr>
-                <tr><td>brand</td><td><input type="text" name="brand"></td></tr>
-                <tr><td>productNumber</td><td><input type="text" name="productNumber"></td></tr>
-                <tr><td>count</td><td><input type="number" id="count" name="count" min="1" max="20"></td></tr>
+                <input type="hidden" name="pid" value='${pid}'>
+                <tr><td>user name</td><td><input type="text" name="uname"></td></tr>
+                <tr><td>phone number</td><td><input type="text" name="pnum"></td></tr>
+                <tr><td>address</td><td><textarea type="text" name="address" cols="21" rows="5"></textarea></td></tr>
                 <tr>
                     <td>
                         <label for="size_XS">XS</label>
@@ -45,6 +43,8 @@
                         <input type="radio" id="size_XL" name="size" value="XL">
                     </td>
                 </tr>
+                <tr><td>count</td><td><input type="number" id="count" name="count" min="1" max="20"></td></tr>
+                <br>
                 <tr>
                     <td><button type="button" onclick="location.href='list'" >back</button></td>
                     <td><button type="submit"/>Add product</td>
