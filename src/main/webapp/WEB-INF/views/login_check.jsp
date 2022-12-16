@@ -20,7 +20,8 @@
   if(id.equals("admin") && pw.equals("1234")){
     msg = "welcome, admin :)";
     ok = 1;
-  }else if(id.equals("user") && pw.equals("1234")){
+  }
+  else if(id.equals("user") && pw.equals("1234")){
     msg = "welcome, user :)";
     ok = 2;
   }
@@ -33,7 +34,7 @@
 <script>
   alert('<%=msg%>');
   if(<%=ok==1%>)location.href='../admin/list';
-  if(<%=ok==2%>)location.href='../user';
+  else if(<%=ok==2%>)location.href='../user';
   else history.back();
 </script>
 
