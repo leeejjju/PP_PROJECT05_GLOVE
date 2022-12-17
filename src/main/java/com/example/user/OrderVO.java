@@ -53,12 +53,6 @@ public class OrderVO {
         this.price = price;
     }
 
-
-
-
-
-
-
     public String getImg() {
         return img;
     }

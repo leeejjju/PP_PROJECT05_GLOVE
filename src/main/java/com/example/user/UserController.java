@@ -60,8 +60,7 @@ public class UserController {
     //주문정보 수정 처리
     @RequestMapping(value = "/editok", method = RequestMethod.POST)
     public String editok(OrderVO vo){
-        int i = orderService.updateOrder(vo);
-        if(i == 0){
+        if(orderService.updateOrder(vo) == 0){
             System.out.println("주문 수정 실패");
         }else{
             System.out.println("주문 수정 성공!!!");

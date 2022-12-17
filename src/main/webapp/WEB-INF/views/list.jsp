@@ -112,5 +112,5 @@
 		</div>
 	</div>
 	<br />
-	<button type = "button" id="button2" onclick="location.href='../'" style="background-color: black; color: white; text-align: center;"><U> Logout </U></button><br>
+	<button type = "button" id="button2" onclick="location.href='../'" style="background-color: black; color: white; display: flex; justify-content: center;"><U> Logout </U></button><br>
 </body>
