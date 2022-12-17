@@ -77,6 +77,8 @@
             </table>
         </div>
     </div>
+    <br />
+    <button class="back" onclick="history.back()"> Back to User Home </button>
 </div>
 <br />
 

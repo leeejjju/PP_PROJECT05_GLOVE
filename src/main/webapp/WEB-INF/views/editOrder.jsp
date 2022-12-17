@@ -17,6 +17,7 @@
     <!--board case-->
     <form:form modelAttribute="orderVO" method="POST" action="../editok" >
 <%--        <form:hidden path="pid"></form:hidden>--%>
+        <form:hidden path="pid"/>
         <table id="edit">
             <tr><td>user name:</td><td><form:input path="uname" /></td></tr>
             <tr><td>phone number: </td><td><form:input path="pnum"/></td></tr>
@@ -46,9 +47,9 @@
 <%--                </td>--%>
 <%--            </tr>--%>
             <tr><td>count</td><td><form:input type="number" id="count" name="count" min="1" max="20"  path="count"></form:input></td></tr>
+            <tr><td colspan="2"><input type="submit" value="Edit order information" /></td>/tr>
+            <tr><td><input type="button" value="Back" onclick="history.back()" />
         </table>
-        <input type="submit" value="Edit order information" />
-        <input type="button" value="Back" onclick="history.back()" />
     </form:form>
 
 

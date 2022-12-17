@@ -57,7 +57,6 @@
     <div class="content">
         <button id="goto" onclick="location.href='user'">Go to grab something!</button>
         <a href="login"> login </a>
-        <a href="file"> file upload test </a>
     </div>
 
 </body>
