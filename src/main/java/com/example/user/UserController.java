@@ -62,7 +62,8 @@ public class UserController {
     public String editok(OrderVO vo){
         if(orderService.updateOrder(vo) == 0){
             System.out.println("주문 수정 실패");
-        }else{
+        }
+        else{
             System.out.println("주문 수정 성공!!!");
         }
         return "redirect:list";
